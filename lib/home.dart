@@ -49,28 +49,53 @@ class HomePage extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          "21 July 2022",
-                          style: TextStyle(color: Colors.white),
-                        ),
-                        Text(
-                          "21 July 2022",
-                          style: TextStyle(color: Colors.white),
-                        ),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
                               "21 July 2022",
                               style: TextStyle(color: Colors.white),
                             ),
-                            Text(
-                              "21 July 2022",
-                              style: TextStyle(color: Colors.white),
+                            Column(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.only(right: 64.0),
+                                  child: Icon(
+                                    Icons.ac_unit,
+                                    color: Colors.white,
+                                    size: 34.0,
+                                  ),
+                                ),
+                              ],
                             ),
                           ],
                         ),
                         Text(
-                          "21 July 2022",
+                          "Energy Usage",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                        Row(
+                          children: [
+                            Text(
+                              "145.8",
+                              style: TextStyle(
+                                color: Colors.lightGreenAccent,
+                                fontSize: 36.0,
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 8.0),
+                              child: Text(
+                                "KW/h",
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ),
+                          ],
+                        ),
+                        Text(
+                          "15% less than yesterday",
                           style: TextStyle(color: Colors.white),
                         ),
                       ],
@@ -137,9 +162,83 @@ class HomePage extends StatelessWidget {
                   ),
                   child: Row(
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Container(),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                right: 16.0,
+                                left: 32.0,
+                                top: 14.0,
+                              ),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Icon(
+                                    
+                                    Icons.lightbulb,
+                                    color: Colors.white,
+
+                                  ),
+                                  Spacer(),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.white,
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                left: 32.0,
+                                top: 32.0,
+                              ),
+                              child: Column(
+                                children: [
+                                  Text(
+                                    "Lighting",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 16.0),
+                                    child: Text(
+                                      "4 lamps",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                right: 16.0,
+                                left: 32.0,
+                                top: 14.0,
+                              ),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    "On",
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                  Spacer(),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.white,
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ],
                   ),

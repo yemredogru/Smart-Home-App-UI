@@ -88,7 +88,7 @@ class _SinglePageState extends State<SinglePage> {
                         child: Column(
                           children: [
                             Text(
-                              "24°",
+                              "${_currentSliderValue.toInt()}°",
                               style: TextStyle(
                                 fontSize: 60.0,
                               ),
