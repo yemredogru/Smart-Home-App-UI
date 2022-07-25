@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smart_home_app_ui/single_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -96,7 +97,7 @@ class HomePage extends StatelessWidget {
             child: Row(
               children: [
                 Container(
-                  height: 250.0,
+                  height: 300.0,
                   width: MediaQuery.of(context).size.width * 0.45,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
@@ -113,7 +114,7 @@ class HomePage extends StatelessWidget {
                 ),
                 SizedBox(width: 30.0),
                 Container(
-                  height: 250.0,
+                  height: 300.0,
                   width: MediaQuery.of(context).size.width * 0.45,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
@@ -136,7 +137,7 @@ class HomePage extends StatelessWidget {
             child: Row(
               children: [
                 Container(
-                  height: 250.0,
+                  height: 300.0,
                   width: MediaQuery.of(context).size.width * 0.45,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
@@ -153,7 +154,7 @@ class HomePage extends StatelessWidget {
                 ),
                 SizedBox(width: 30.0),
                 Container(
-                  height: 250.0,
+                  height: 300.0,
                   width: MediaQuery.of(context).size.width * 0.45,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
@@ -170,6 +171,76 @@ class HomePage extends StatelessWidget {
                 ),
               ],
             ),
+          ),
+        ],
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+        items: [
+          BottomNavigationBarItem(
+            icon: IconButton(
+              icon: Icon(
+                Icons.person,
+                color: Colors.black,
+              ),
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => SinglePage(),
+                  ),
+                );
+              },
+            ),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: IconButton(
+              icon: Icon(
+                Icons.person,
+                color: Colors.black,
+              ),
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => SinglePage(),
+                  ),
+                );
+              },
+            ),
+            label: 'Business',
+          ),
+          BottomNavigationBarItem(
+            icon: IconButton(
+              icon: Icon(
+                Icons.person,
+                color: Colors.black,
+              ),
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => SinglePage(),
+                  ),
+                );
+              },
+            ),
+            label: 'School',
+          ),
+          BottomNavigationBarItem(
+            icon: IconButton(
+              icon: Icon(
+                Icons.person,
+                color: Colors.black,
+              ),
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => SinglePage(),
+                  ),
+                );
+              },
+            ),
+            label: 'New',
           ),
         ],
       ),
