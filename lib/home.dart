@@ -36,13 +36,45 @@ class HomePage extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: Container(
                   height: 150.0,
+                  width: 450.0,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     color: Colors.black,
                   ),
-                  child: const Center(
-                    child: Text("Merhaba Dünya",
-                        style: TextStyle(color: Colors.white)),
+                  child: Padding(
+                    padding: const EdgeInsets.only(
+                      left: 16.0,
+                      top: 16.0,
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "21 July 2022",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                        Text(
+                          "21 July 2022",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                        Row(
+                          children: [
+                            Text(
+                              "21 July 2022",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            Text(
+                              "21 July 2022",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ],
+                        ),
+                        Text(
+                          "21 July 2022",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
@@ -181,7 +213,7 @@ class HomePage extends StatelessWidget {
           BottomNavigationBarItem(
             icon: IconButton(
               icon: Icon(
-                Icons.person,
+                Icons.home,
                 color: Colors.black,
               ),
               onPressed: () {
@@ -197,7 +229,7 @@ class HomePage extends StatelessWidget {
           BottomNavigationBarItem(
             icon: IconButton(
               icon: Icon(
-                Icons.person,
+                Icons.add_chart,
                 color: Colors.black,
               ),
               onPressed: () {
@@ -213,7 +245,7 @@ class HomePage extends StatelessWidget {
           BottomNavigationBarItem(
             icon: IconButton(
               icon: Icon(
-                Icons.person,
+                Icons.notifications,
                 color: Colors.black,
               ),
               onPressed: () {
@@ -229,7 +261,7 @@ class HomePage extends StatelessWidget {
           BottomNavigationBarItem(
             icon: IconButton(
               icon: Icon(
-                Icons.person,
+                Icons.settings_display,
                 color: Colors.black,
               ),
               onPressed: () {
