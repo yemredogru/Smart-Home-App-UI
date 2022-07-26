@@ -177,10 +177,8 @@ class HomePage extends StatelessWidget {
                                     MainAxisAlignment.spaceBetween,
                                 children: [
                                   Icon(
-                                    
                                     Icons.lightbulb,
                                     color: Colors.white,
-
                                   ),
                                   Spacer(),
                                   Icon(
@@ -251,11 +249,33 @@ class HomePage extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20),
                     color: Colors.grey,
                   ),
-                  child: Row(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Container(),
+                        padding: const EdgeInsets.only(
+                          left: 16.0,
+                          top: 16.0,
+                        ),
+                        child: Column(
+                          children: [
+                            Icon(
+                              Icons.tv,
+                            ),
+                            Text("Smart TV"),
+                            Text("2 devices"),
+                          ],
+                        ),
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Text("Off"),
+                          Spacer(),
+                          Icon(
+                            Icons.ondemand_video,
+                          ),
+                        ],
                       ),
                     ],
                   ),
@@ -274,11 +294,33 @@ class HomePage extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20),
                     color: Colors.grey,
                   ),
-                  child: Row(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Container(),
+                        padding: const EdgeInsets.only(
+                          left: 16.0,
+                          top: 16.0,
+                        ),
+                        child: Column(
+                          children: [
+                            Icon(
+                              Icons.tv,
+                            ),
+                            Text("Smart TV"),
+                            Text("2 devices"),
+                          ],
+                        ),
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Text("Off"),
+                          Spacer(),
+                          Icon(
+                            Icons.ondemand_video,
+                          ),
+                        ],
                       ),
                     ],
                   ),
@@ -291,11 +333,33 @@ class HomePage extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20),
                     color: Colors.grey,
                   ),
-                  child: Row(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Container(),
+                        padding: const EdgeInsets.only(
+                          left: 16.0,
+                          top: 16.0,
+                        ),
+                        child: Column(
+                          children: [
+                            Icon(
+                              Icons.tv,
+                            ),
+                            Text("Smart TV"),
+                            Text("2 devices"),
+                          ],
+                        ),
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Text("Off"),
+                          Spacer(),
+                          Icon(
+                            Icons.ondemand_video,
+                          ),
+                        ],
                       ),
                     ],
                   ),
